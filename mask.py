@@ -74,7 +74,6 @@ def visualize_attentions(tokens, attentions):
     (starting count from 1).
     """
     beam = 0
-    print(len(attentions))
     for layer in range(len(attentions)) :
         for head in range(len(attentions[layer][beam])):
             generate_diagram(
@@ -132,7 +131,7 @@ def generate_diagram(layer_number, head_number, tokens, attention_weights):
             draw.rectangle((x, y, x + GRID_SIZE, y + GRID_SIZE), fill=color)
 
     # Save image
-    img.save(f"assets/Attention_Layer{layer_number}_Head{head_number}.png")
+    img.save(f"assets/Sentence3/Attention_Layer{layer_number}_Head{head_number}.png")
 
 
 if __name__ == "__main__":

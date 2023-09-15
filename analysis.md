@@ -1,34 +1,44 @@
 # Analysis
 
-## Layer TODO, Head TODO
+## Layer 4, Head 5
 
-TODO
-
-Example Sentences:
-- TODO
-- TODO
-
-## Layer TODO, Head TODO
-
-TODO
+This head describes the contextual information derived from the relationship between delimiters, pronouns, prepositions and nouns. For example, in the first sentence the delimiter "the" is associated with the noun "aroma", which is the main noun and represents the sensory experience being described. In the second sentence,  "the" is associated with the noun "artwork". In the third sentence, the preposition "in" is associated with the noun "city" and the pronoun "his" with the noun "guitar". 
 
 Example Sentences:
-- TODO
-- TODO
+- She opened the [MASK] and enjoyed the aroma of fresh coffee.
+- He picked up the [MASK] and admired the beautiful artwork.
+- In the noisy city, he turned his old guitar and played a [MASK].
+
+Here are the generated diagrams for the specific head: 
+
+![First Sentence_1](./assets/Sentence1/Attention_Layer4_Head5.png)
+![Second Sentence_1](./assets/Sentence2/Attention_Layer4_Head5.png)
+![Third Sentence_1](./assets/Sentence3/Attention_Layer4_Head5.png)
+
+## Layer 5, Head 6
+
+This head learned to identify the relationship between verbs and direct objects or action to an object. For example, in the first sentence, [MASK] which is an object seems to give a high attention score to "opened" which is the action. Similarly, in the second sentence, [MASK] gives a high score to "picked up", and in the third sentence, [MASK] scores "played" the highest.
+
+Example Sentences:
+- She opened the [MASK] and enjoyed the aroma of fresh coffee.
+- He picked up the [MASK] and admired the beautiful artwork.
+- In the noisy city, he turned his old guitar and played a [MASK].
+
+![First Sentence_2](./assets/Sentence1/Attention_Layer5_Head6.png)
+![Second Sentence_2](./assets/Sentence2/Attention_Layer5_Head6.png)
+![Third Sentence_2](./assets/Sentence3/Attention_Layer5_Head6.png)
+
+## Layer 7, Head 2
+
+This head learned to identify the relationship between the subject and the action if performs. For example, in the first sentence, "She" is performing the actions of "opened" and "enjoyed" and that is why we notice the highest attention scores for "She" in these 2 verbs. Similarly, in the second sentence, "He" performed the actions of "picked" and "admired", while in the third sentence, "he" performed the actions of "tuned" and "played".
+
+Example Sentences:
+- She opened the [MASK] and enjoyed the aroma of fresh coffee.
+- He picked up the [MASK] and admired the beautiful artwork.
+- In the noisy city, he turned his old guitar and played a [MASK].
+
+![First Sentence_3](./assets/Sentence1/Attention_Layer7_Head2.png)
+![Second Sentence_3](./assets/Sentence2/Attention_Layer7_Head2.png)
+![Third Sentence_3](./assets/Sentence3/Attention_Layer7_Head2.png)
 
 
-
-
-
-
-
-Attention_Layer2_Head0 (recognize following word)
-Attention_Layer0_Head8 (behind - trees)
-Attention_Layer0_Head9 / Attention_Layer1_Head11 / Attention_Layer2_Head10(forest - trees)
-Attention_Layer2_Head1 (dart - saw)
-Attention_Layer3_Head9 (possible words they refer to)
-Attention_Layer3_Head11 (forest- entered , dart- saw)
-Attention_Layer4_Head5
-Attention_Layer11_Head7 (MASK - forest)
-Attention_Layer9_Head0
-Attention_Layer6_Head9/Attention_Layer6_Head10/Attention_Layer8_Head11
